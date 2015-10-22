@@ -1,0 +1,188 @@
+*{	
+	box-sizing:border-box;  /*Mantiene el ancho que uno especifique independientemente  del padding que tenga el elemento,  *{es para todos los elementos }  */
+} 
+
+body{
+
+	font-family: 'Limelight', cursive;
+	/* Involucrar en las css la fuente declarada en el html, esta instruccion se obtiene en https://www.google.com/fonts*/
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+.home-wrapper{
+	/*Para ubicar esa imagen, doble punto, nos salimos del directorio css, volvemos a studiodev y ahi si vamos a images*/
+	/*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), Esta línea permite que la imagen de fondo quede mas oscura, si asi se desea.*/
+	background: url('../images/background.jpg') no-repeat center top; 
+	background-size: cover;  /*  */
+	
+}
+
+header { 
+	position: fixed;
+	padding: 20px 0;  /*se aleja del borde superior del navegador*/	
+	width: 100%;
+	background-color: rgba(48,48,48,0.6); /*0.5 es la transparencia*/
+	
+}
+
+header nav{
+	float: right; /*mover el menu a la derecha*/
+	margin-top: 10px; /*alejar de la parte superior*/
+}
+
+header nav a{
+	color: white;
+	font-weight: bold;
+	text-decoration: none; /* Para evitar el subrayado*/
+	margin-left: 10px; /*Espacio entre las opciones o vinculos del menu*/
+	padding: 10px 15px; /*10 arriba y abajo - 15 a los lados*/
+}
+
+header nav a.active{
+	background-color: #0174DF;
+	border-radius: 3px;
+}
+
+#home{
+	text-align: center;
+	padding: 200px 0 260px;  
+	color: #E4DDDA;
+}
+
+#home h1{
+	font-size: 58px;
+	font-weight: normal;
+	margin-bottom: 40px;
+}
+
+#home h2{
+	margin: -50px;
+}
+
+#home p{
+	font-size: 28px;
+	margin: 125px;	
+	color: #E4DDDA;
+}
+
+#home .social{
+	margin-top: 150px;
+}
+
+#home .social a{
+	color: white;
+	display: inline-block;
+	border-radius: 50%;
+	background-color: black;
+	font-size: 24px;
+	font-weight: bold;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	margin-right: 10px;
+	-webkit-transition: all .3s; /*Las tres lineas siguientes son para que el efecto del boton dure ese tiempo*/
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+
+#home .social a:hover{  
+	background-color: #0174DF;
+
+}
+
+#skills{
+	padding: 5px 40px 2px;
+	margin: 0 auto;
+	width: 500px;
+	border-radius: 10px;
+	background-color: #E5E5E5;
+	color: black;
+	box-shadow: 20px -8px 99px 36px rgba(0,0,0,0.75);	
+}
+
+
+#projects{
+	background-color: #034060;/*#9A9497;*/
+	width: 100%;
+	color: white;
+
+}
+
+#contact{
+	width: 100%;
+	text-align: center
+
+}
+
+#contact input{
+	background-color: #E5E5E5;
+	padding: 20px;
+	margin: 5px 0;
+	width: 600px;
+	border: 1px; solid #E5E5E5 ;
+	border-radius: 3px;
+}
+
+#contact textarea{
+	background-color: #E5E5E5;
+	padding: 20px;
+	margin: 5px 0;		
+	width: 600px;
+}
+
+#contact button{
+	background-color: #4C4D4F;
+	padding: 20px 40px;
+	width: 600px;
+	border-color: #E5E5E5;
+	border-radius: 3px;
+	color: white;
+	font-size: 18px;
+	line-height: 1px;
+	font-weight: bold;
+
+}
+
+#projects .box{
+	display: inline-block;
+	text-align: center;
+	width: 31%;
+	margin: 1%;
+	
+}
+
+#projects img{
+	opacity: 0.4;
+	width: 350px; 
+	height: 250px;
+}
+
+#projects img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+} 
+
+
+section{
+	padding: 120px 0; /*Espacio entre las secciones*/
+}
+
+section h2{ /*Centrar los titulos de Servicios, Portafolio y Contacto*/
+	font-size: 32px;
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+footer{
+	padding: 90px 0;  /*90 arriba y abajo y cero a los lados*/
+	text-align: center;
+	font-size: 18px;
+}
+
+
+.container{
+	width: 992px;
+	margin-left: auto;
+	margin-right: auto;
+}
